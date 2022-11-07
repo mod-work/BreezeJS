@@ -5,6 +5,8 @@
 
 ## 📋 Rules
 
+### General Rules
+
 ### 🔶 Frontend
 - create a branch for frontend-main
 - for every new feature for frontend changes \
