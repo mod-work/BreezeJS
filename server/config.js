@@ -1,1 +1,1 @@
-console.log("Hello Server!!");
+console.log("Press F to pay respect!!");
