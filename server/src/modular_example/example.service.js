@@ -6,7 +6,7 @@ export default (exampleRepository) => {
         return result;
     };
 
-    Object.freeze({
+    return Object.freeze({
         fetchSomePosts,
     });
 };

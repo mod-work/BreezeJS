@@ -2,8 +2,8 @@ import express from "express";
 
 const router = express.Router();
 
-export default (module) => {
-    router.route("/").get(module.getSomePosts);
+export default (exampleModule) => {
+    router.route("/").get(exampleModule.getSomePosts);
 
     return router;
 };

@@ -1,7 +1,7 @@
 import express from "express";
 // import expressRouter from "./router.interface.js";
 
-export const expressAdapter = (api) => {
+export default (api) => {
     const app = express();
 
     app.use(express.urlencoded({ extended: true }));

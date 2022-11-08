@@ -1,7 +1,7 @@
 // write controller logic here with the try catch elements
 // pass down the request in the service block to keep the controller http logic clean
-export default (exampleService)=> {
-    const getSomePosts = async (req, res, next)=> {
+export default (exampleService) => {
+    const getSomePosts = async (req, res, next) => {
         try {
             const request = await exampleService.fetchSomePosts(req);
             res.status(200).json({
@@ -9,16 +9,16 @@ export default (exampleService)=> {
                 success: true,
                 message: "here is your Posts!",
             });
-
+            next();
         } catch (error) {
-            res.status(404).json({                
+            res.status(404).json({
                 message: "Data not found!",
                 success: false,
-            })
+            });
         }
-    }
+    };
 
-    Object.freeze({
-        getSomePosts
+    return Object.freeze({
+        getSomePosts,
     });
-}
+};

@@ -22,7 +22,7 @@ export default () => {
             });
         throw new Error("No data found!!");
     };
-    Object.freeze({
+    return Object.freeze({
         find,
     });
 };
